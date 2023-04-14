@@ -41,7 +41,7 @@ nav a {
 }
 
 .bg-image{
-	background: url(Media/clean.jpg);
+	background: url(Media/wash.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -57,16 +57,13 @@ main {
 }
 
 .hero {
-	background-image: url('Media/wash.jpg');
-	background-size: cover;
-	background-position: center;
 	height: 400px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: #fff;
-	text-align: center;
+	display: block;
+	color: #e5e6eb;
+	position: absolute;
+	right: 50px;
+	top: 50%;
+	font-size: 1.5rem;
 }
 
 .hero h2 {
@@ -111,11 +108,12 @@ main {
  	box-sizing: border-box;
  	background-color: white;
 	border-radius: 1.2rem;
-	background: rgb(36, 175, 240);
+	background: #1A2D5F;
+	color: #fff;
   }
 
 .btn {
-	background-color:rgb(36, 175, 240);
+	background-color:#1A2D5F;
 	color: #fff;
 	padding: 10px 20px;
 	border: none;
@@ -128,8 +126,9 @@ main {
 
 .footer{
 	padding: 25px;
-	background-color: rgb(36, 175, 240);
+	background-color: rgb(44, 49, 53);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: #fff;
 }
