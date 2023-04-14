@@ -1,7 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	background: linear-gradient(to top right, #0077b6, #ffffff);
 }
 
 header {
@@ -10,7 +17,11 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	padding: 35px;
+}
+
+span{
+	color: rgb(36, 175, 240);
 }
 
 nav ul {
@@ -29,6 +40,16 @@ nav a {
 	text-decoration: none;
 }
 
+.bg-image{
+	background: url(Media/clean.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 100vh;
+	padding: 80px;
+  }
+
 main {
 	max-width: 960px;
 	margin: 0 auto;
@@ -36,7 +57,7 @@ main {
 }
 
 .hero {
-	background-image: url('hero.jpg');
+	background-image: url('Media/wash.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 400px;
@@ -73,10 +94,28 @@ main {
 .services li {
 	margin-right: 20px;
 	font-size: 1.2rem;
+	list-style: none;
 }
 
+.tiles{
+	display: flex;
+  	flex-direction: row;
+  	justify-content: space-around;
+  }
+
+.service-tile{
+	width:320px;
+	height:350px;
+ 	margin:10px;
+	padding:20px;
+ 	box-sizing: border-box;
+ 	background-color: white;
+	border-radius: 1.2rem;
+	background: rgb(36, 175, 240);
+  }
+
 .btn {
-	background-color: #333;
+	background-color:rgb(36, 175, 240);
 	color: #fff;
 	padding: 10px 20px;
 	border: none;
@@ -85,4 +124,12 @@ main {
 	text-decoration: none;
 	margin-top: 20px;
 	display: inline-block;
+}
+
+.footer{
+	padding: 25px;
+	background-color: rgb(36, 175, 240);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
