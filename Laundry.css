@@ -5,14 +5,15 @@
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Times New Roman', Times, serif;
 	margin: 0;
 	padding: 0;
 	background: linear-gradient(to top right, #0077b6, #ffffff);
+	min-height: 100vh;
 }
 
 header {
-	background-color: #333;
+	background-color: #1E3050;
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -24,10 +25,15 @@ span{
 	color: rgb(36, 175, 240);
 }
 
+.fa-tint{
+	font-size: 50px;
+	color: rgb(36, 175, 240);
+}
+
 nav ul {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	display: flex;
 }
 
@@ -104,6 +110,7 @@ nav a {
 	background: #1A2D5F;
 	color: #fff;
 	margin: 15px;
+	transition: transform 0.3s ease-out;
   }
 
   .service-tile img{
@@ -111,7 +118,16 @@ nav a {
 	max-width: 100%;
 	background-size: cover;
 	border-radius: 1.2rem;
+	transition: transform 5s ease-out;
+	}
+	  
+
+  .service-tile:hover {
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	transform: scale(1.1);
+
   }
+
 
 .btn {
 	background-color:#1A2D5F;
@@ -125,29 +141,161 @@ nav a {
 	display: inline-block;
 }
 
-.about{
-	color: black;
+.about h2{
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 900;
+
+}
+
+.about p{
+	font-size: larger;
+	text-align: justify;
+}
+
+.about {
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 20px;
 	padding: 35px;
+}
+
+#about {
 	width: 55%;
 	float: left;
 }
 
-.about-image{
-	float: right;
+.about-image {
 	width: 40%;
+	float: right;
+	margin: 20px;
 }
 
 .about-image img{
 	width: 100%;
 	height: auto;
+	border-radius: 1.2rem;
 }
 
-.footer{
-	padding: 25px;
-	background-color: rgb(44, 49, 53);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.footer {
+	background-color: #1E3050;
 	color: #fff;
-}
+	padding: 25px;
+  }
+  
+  #connect {
+	margin: 0;
+	font-size: 30px;
+	font-weight: bold;
+  }
+  
+  .footer ul {
+	list-style: none;
+	margin: 10px 0 0 0;
+	padding: 0;
+  }
+  
+  .footer li {
+	display: inline-block;
+	margin: 10px;
+	font-size: 14px;
+	padding-bottom: 10px; /* Add 10px of padding below each list item */
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+  }
+
+  .footer li i
+  {
+	margin-right: 10px;
+  }
+  
+  
+  .footer a {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  .footer a:hover {
+	text-decoration: underline;
+  }
+  
+  #copyright{
+	text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+	header {
+	  flex-direction: column;
+	  align-items: center;
+	  padding: 15px;
+	}
+	
+	nav ul {
+	  flex-direction: column;
+	  align-items: center;
+	  margin-top: 10px;
+	}
+	
+	nav li {
+	  margin-right: 0;
+	  margin-bottom: 10px;
+	}
+	
+	.hero {
+	  position: relative;
+	  right: auto;
+	  top: auto;
+	  text-align: center;
+	  margin-top: 60px;
+	}
+	
+	.services {
+	  margin-top: 20px;
+	}
+	
+	.services ul {
+	  flex-direction: column;
+	}
+	
+	.services li {
+	  margin-right: 0;
+	  margin-bottom: 10px;
+	}
+	
+	.tiles {
+	  flex-direction: column;
+	  align-items: center;
+	}
+	
+	.service-tile {
+	  width: 100%;
+	  height: auto;
+	  margin: 10px 0;
+	}
+	
+	#about {
+	  width: 100%;
+	  float: none;
+	}
+	
+	.about-image {
+	  width: 100%;
+	  float: none;
+	  margin: 20px 0;
+	}
+  }
+  
+  @media screen and (max-width: 576px) {
+	.hero h2 {
+	  font-size: 2rem;
+	}
+	
+	.service-tile {
+	  height: 300px;
+	}
+	
+	.about p {
+	  font-size: 1rem;
+	}
+  }
+  
